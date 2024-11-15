@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1731454428">
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1731629891">
+  <File Type="OPT-HWDEF" Name="TrackerTopLevel.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="TrackerTopLevel_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="TrackerTopLevel.dcp"/>
   <File Type="ROUTE-PWR" Name="TrackerTopLevel_power_routed.rpt"/>
   <File Type="PA-TCL" Name="TrackerTopLevel.tcl"/>
   <File Type="BITSTR-MMI" Name="TrackerTopLevel.mmi"/>
@@ -10,7 +13,6 @@
   <File Type="OPT-TIMING" Name="TrackerTopLevel_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="TrackerTopLevel_opt.dcp"/>
   <File Type="OPT-DRC" Name="TrackerTopLevel_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="TrackerTopLevel.hwdef"/>
   <File Type="PWROPT-DCP" Name="TrackerTopLevel_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="TrackerTopLevel_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="TrackerTopLevel_timing_summary_pwropted.rpt"/>
@@ -48,7 +50,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="TrackerTopLevel_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="TrackerTopLevel_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="TrackerTopLevel_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="TrackerTopLevel_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="TrackerTopLevel_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="TrackerTopLevel_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="TrackerTopLevel_postroute_physopt.dcp"/>
@@ -81,6 +82,114 @@
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/SCCB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/SCCB.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/VGA.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/VGA.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cameraCaptureImage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/cameraCaptureImage.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cameraConfig.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/cameraConfig.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cameraConfig_setup.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/cameraConfig_setup.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cameraConfig_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/cameraConfig_top.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cameraControl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/cameraControl.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clkDiv_1Hz.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/clkDiv_1Hz.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clkDiv_visual.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/clkDiv_visual.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/frameBuffer_greyScale.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/frameBuffer_greyScale.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/topModule.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/topModule.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/vga_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/vga_controller.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/ServoDriver.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -90,6 +199,84 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/TrackerTopLevel.sv">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/OV7670_config.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/OV7670-Verilog-master/OV7670-Verilog-master/src/OV7670_config.v"/>
+        <Attr Name="ImportTime" Val="1731637093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/OV7670_config_rom.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/OV7670-Verilog-master/OV7670-Verilog-master/src/OV7670_config_rom.v"/>
+        <Attr Name="ImportTime" Val="1731637093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SCCB_interface.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/OV7670-Verilog-master/OV7670-Verilog-master/src/SCCB_interface.v"/>
+        <Attr Name="ImportTime" Val="1731637093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/camera_configure.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/OV7670-Verilog-master/OV7670-Verilog-master/src/camera_configure.v"/>
+        <Attr Name="ImportTime" Val="1731637093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/camera_read.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/OV7670-Verilog-master/OV7670-Verilog-master/src/camera_read.v"/>
+        <Attr Name="ImportTime" Val="1731637093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design_source/VGA_controller.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/lab6_2_provided/design_source/VGA_controller.sv"/>
+        <Attr Name="ImportTime" Val="1729629099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display_mapper.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clk25_mod.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/camera.srcs/sources_1/new/clk25_mod.v"/>
+        <Attr Name="ImportTime" Val="1731622299"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -140,5 +327,7 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="vga_to_hdmi"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bram"/>
 </GenRun>

@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Nov 12 17:33:51 2024
-# Process ID: 35700
+# Start of session at: Thu Nov 14 18:16:13 2024
+# Process ID: 17296
 # Current directory: C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1
 # Command line: vivado.exe -log TrackerTopLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TrackerTopLevel.tcl
 # Log file: C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/TrackerTopLevel.vds
@@ -11,6 +11,11 @@
 # Running On: DESKTOP-JA1U62V, OS: Windows, CPU Frequency: 4392 MHz, CPU Physical cores: 24, Host memory: 67770 MB
 #-----------------------------------------------------------
 source TrackerTopLevel.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ethan/Downloads/RD_hdmi_ip2020/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.cache/ip 
 Command: read_checkpoint -auto_incremental -incremental C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/utils_1/imports/synth_1/TrackerTopLevel.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/utils_1/imports/synth_1/TrackerTopLevel.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -23,91 +28,267 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 34704
+INFO: [Synth 8-7075] Helper process launched with PID 17076
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'reest', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:11]
-INFO: [Synth 8-11241] undeclared symbol 'clk_out180Mhz', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:14]
+INFO: [Synth 8-11241] undeclared symbol 'clk_out180Mhz', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:46]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'clk25_reg' is not allowed [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:34]
+INFO: [Synth 8-11241] undeclared symbol 'idealX', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:119]
+INFO: [Synth 8-11241] undeclared symbol 'idealY', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:120]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1188.668 ; gain = 410.668
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1189.867 ; gain = 408.812
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'TrackerTopLevel' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'servo_driver' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/ServoDriver.sv:1]
 INFO: [Synth 8-6155] done synthesizing module 'servo_driver' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/ServoDriver.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-35700-DESKTOP-JA1U62V/realtime/clk_wiz_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-35700-DESKTOP-JA1U62V/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-17296-DESKTOP-JA1U62V/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-17296-DESKTOP-JA1U62V/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'topModule' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clkDiv_1Hz' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/clkDiv_1Hz.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'clkDiv_1Hz' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/clkDiv_1Hz.v:8]
+INFO: [Synth 8-6157] synthesizing module 'clkDiv_visual' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/clkDiv_visual.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'clkDiv_visual' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/clkDiv_visual.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cameraControl' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraControl.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cameraConfig_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraConfig_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'cameraConfig' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraConfig.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cameraConfig' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraConfig.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cameraConfig_setup' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraConfig_setup.v:4]
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraConfig_setup.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'cameraConfig_setup' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraConfig_setup.v:4]
+INFO: [Synth 8-6157] synthesizing module 'SCCB' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/SCCB.v:4]
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/SCCB.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/SCCB.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cameraConfig_top' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraConfig_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'cameraCaptureImage' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraCaptureImage.v:13]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraCaptureImage.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'cameraCaptureImage' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraCaptureImage.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cameraControl' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/cameraControl.v:9]
+INFO: [Synth 8-6157] synthesizing module 'frameBuffer_greyScale' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bram' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-17296-DESKTOP-JA1U62V/realtime/bram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bram' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-17296-DESKTOP-JA1U62V/realtime/bram_stub.v:5]
+WARNING: [Synth 8-689] width (18) of port connection 'addra' does not match port width (17) of module 'bram' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:59]
+WARNING: [Synth 8-689] width (18) of port connection 'addrb' does not match port width (17) of module 'bram' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:60]
+WARNING: [Synth 8-689] width (4) of port connection 'doutb' does not match port width (16) of module 'bram' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'frameBuffer_greyScale' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:10]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/VGA.v:9]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/vga_controller.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/vga_controller.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/VGA.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'topModule' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:9]
+INFO: [Synth 8-6157] synthesizing module 'vga_to_hdmi' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-17296-DESKTOP-JA1U62V/realtime/vga_to_hdmi_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'vga_to_hdmi' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-17296-DESKTOP-JA1U62V/realtime/vga_to_hdmi_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'TrackerTopLevel' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:1]
-WARNING: [Synth 8-3848] Net reset in module/entity TrackerTopLevel does not have driver. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:10]
-WARNING: [Synth 8-7129] Port reset_rtl_0 in module TrackerTopLevel is either unconnected or has no load
+WARNING: [Synth 8-3848] Net LED in module/entity topModule does not have driver. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:19]
+WARNING: [Synth 8-3848] Net pixelValid_verify in module/entity topModule does not have driver. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:23]
+WARNING: [Synth 8-3848] Net idealX in module/entity topModule does not have driver. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:119]
+WARNING: [Synth 8-3848] Net idealY in module/entity topModule does not have driver. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:120]
+WARNING: [Synth 8-7129] Port idealY[9] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port redHue in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port edgeOn in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module frameBuffer_greyScale is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inPixel[11] in module frameBuffer_greyScale is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inPixel[6] in module frameBuffer_greyScale is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inPixel[5] in module frameBuffer_greyScale is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inPixel[0] in module frameBuffer_greyScale is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[14] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[13] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[12] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[11] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[10] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[9] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[8] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[7] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[6] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[5] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[4] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[3] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[2] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[1] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[0] in module topModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixelValid_verify in module topModule is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1278.570 ; gain = 500.570
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1289.043 ; gain = 507.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1278.570 ; gain = 500.570
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1289.043 ; gain = 507.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1278.570 ; gain = 500.570
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1289.043 ; gain = 507.988
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1278.570 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1289.043 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_wiz_1'
 Finished Parsing XDC File [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_wiz_1'
+Parsing XDC File [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc] for cell 'vga_to_hdmi'
+Finished Parsing XDC File [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc] for cell 'vga_to_hdmi'
+Parsing XDC File [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/bram/bram/bram_in_context.xdc] for cell 'camera_top/frame/greyScale'
+Finished Parsing XDC File [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/bram/bram/bram_in_context.xdc] for cell 'camera_top/frame/greyScale'
 Parsing XDC File [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc]
-CRITICAL WARNING: [Constraints 18-1056] Clock 'clk_100' completely overrides clock 'clk'.
-New: create_clock -period 10.000 -name clk_100 -waveform {0.000 5.000} [get_ports clk], [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:1]
-Previous: create_clock -period 10.000 [get_ports clk], [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc:1]
-Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_datain[7]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:52]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_datain[6]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:54]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_datain[5]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:56]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_datain[4]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:58]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_datain[3]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:60]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_datain[2]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:62]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_datain[1]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:64]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_datain[0]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:66]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[15]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:68]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[14]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:70]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[13]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:72]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[12]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:74]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[11]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:76]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[10]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:78]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[9]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:80]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[8]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:82]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[7]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:84]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[6]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:86]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[5]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:88]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[4]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:90]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[3]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:92]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[2]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:94]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[1]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:96]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'sw_i[0]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:98]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'Servo1PWM' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:100]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'Servo2PWM' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:104]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'i2c_sda' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:108]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_href' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:112]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_pixel_clock' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:114]
+WARNING: [Vivado 12-507] No nets matched 'camera_pixel_clock_IBUF'. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:116]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_reset_sig' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:117]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_vsync' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:121]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'pwdn' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:123]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'i2c_scl' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:127]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hdmi_tmds_data_n[2]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:131]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hdmi_tmds_data_n[1]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:133]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hdmi_tmds_data_n[0]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:135]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hdmi_tmds_data_p[2]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:137]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hdmi_tmds_data_p[1]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:139]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hdmi_tmds_data_p[0]' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:141]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hdmi_tmds_clk_n' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:143]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hdmi_tmds_clk_p' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:145]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'reset_rtl_0' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:147]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'clk' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:149]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'camera_clock' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc:151]
 Finished Parsing XDC File [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TrackerTopLevel_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/constrs_1/new/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TrackerTopLevel_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TrackerTopLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1327.617 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1332.645 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1327.617 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1332.645 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'camera_top/frame/greyScale' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1327.617 ; gain = 549.617
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1337.555 ; gain = 556.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1327.617 ; gain = 549.617
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1337.555 ; gain = 556.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/vga_to_hdmi/vga_to_hdmi_in_context.xdc, line 16).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for camera_top/frame/greyScale. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1327.617 ; gain = 549.617
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1337.555 ; gain = 556.500
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'FSM_state_reg' in module 'cameraCaptureImage'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        WAIT_FRAME_START |                                0 |                               00
+             ROW_CAPTURE |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'FSM_state_reg' using encoding 'sequential' in module 'cameraCaptureImage'
+WARNING: [Synth 8-327] inferring latch for variable 'VGA_R_reg' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/VGA.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'VGA_G_reg' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/VGA.v:80]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1327.617 ; gain = 549.617
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1337.555 ; gain = 556.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 2     
-	                1 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---ROMs : 
+	                    ROMs := 1     
 +---Muxes : 
-	   2 Input    1 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 1     
+	  14 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	  14 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	  14 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 5     
+	   3 Input    4 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 32    
+	   4 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 4     
+	  14 Input    1 Bit        Muxes := 11    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -124,27 +305,65 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'camera_top/frame/inAddress_reg' and it is trimmed from '18' to '17' bits. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:59]
+WARNING: [Synth 8-3936] Found unconnected internal register 'camera_top/frame/outAddress_reg' and it is trimmed from '18' to '17' bits. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:60]
+WARNING: [Synth 8-6040] Register camera_top/cam/camConfig/config_1/rom_addr_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 DSP Report: Generating DSP p_1_out, operation Mode is: (C:0x2bf20)+(A:0x7d0)*B.
 DSP Report: operator p_1_out is absorbed into DSP p_1_out.
 DSP Report: operator driver1/PWM2 is absorbed into DSP p_1_out.
 DSP Report: Generating DSP p_1_out, operation Mode is: (C:0x2bf20)+(A:0x7d0)*B.
 DSP Report: operator p_1_out is absorbed into DSP p_1_out.
 DSP Report: operator driver2/PWM2 is absorbed into DSP p_1_out.
-WARNING: [Synth 8-7129] Port reset_rtl_0 in module TrackerTopLevel is either unconnected or has no load
+DSP Report: Generating DSP camera_top/frame/inAddress1, operation Mode is: (D'+(A:0x3fffffd8))*(B:0x258).
+DSP Report: register camera_top/cam/camCapture/vIdx_reg is absorbed into DSP camera_top/frame/inAddress1.
+DSP Report: operator camera_top/frame/inAddress1 is absorbed into DSP camera_top/frame/inAddress1.
+DSP Report: operator camera_top/frame/inAddress2 is absorbed into DSP camera_top/frame/inAddress1.
+DSP Report: Generating DSP camera_top/frame/inAddress_reg, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffec).
+DSP Report: register camera_top/frame/inAddress_reg is absorbed into DSP camera_top/frame/inAddress_reg.
+DSP Report: operator camera_top/frame/inAddress0 is absorbed into DSP camera_top/frame/inAddress_reg.
+DSP Report: Generating DSP camera_top/frame/outAddress1, operation Mode is: (D'+(A:0x3fffffd8))*(B:0x258).
+DSP Report: register camera_top/display/vga_control/vcounter_reg is absorbed into DSP camera_top/frame/outAddress1.
+DSP Report: operator camera_top/frame/outAddress1 is absorbed into DSP camera_top/frame/outAddress1.
+DSP Report: operator camera_top/frame/outAddress2 is absorbed into DSP camera_top/frame/outAddress1.
+DSP Report: Generating DSP camera_top/frame/outAddress_reg, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffec).
+DSP Report: register camera_top/frame/outAddress_reg is absorbed into DSP camera_top/frame/outAddress_reg.
+DSP Report: operator camera_top/frame/outAddress0 is absorbed into DSP camera_top/frame/outAddress_reg.
+WARNING: [Synth 8-3917] design TrackerTopLevel has port camera_reset_sig driven by constant 1
+WARNING: [Synth 8-3917] design TrackerTopLevel has port pwdn driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_R_reg[3]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_R_reg[2]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_R_reg[1]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_R_reg[0]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_G_reg[3]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_G_reg[2]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_G_reg[1]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_G_reg[0]) is unused and will be removed from module TrackerTopLevel.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1327.617 ; gain = 549.617
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1337.555 ; gain = 556.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
+ROM: Preliminary Mapping Report
++----------------+----------------------------------------+---------------+----------------+
+|Module Name     | RTL Object                             | Depth x Width | Implemented As | 
++----------------+----------------------------------------+---------------+----------------+
+|TrackerTopLevel | camera_top/cam/camConfig/rom1/dout_reg | 256x16        | Block RAM      | 
++----------------+----------------------------------------+---------------+----------------+
+
+
 DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
-+-------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name  | DSP Mapping             | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+-------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|servo_driver | (C:0x2bf20)+(A:0x7d0)*B | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|servo_driver | (C:0x2bf20)+(A:0x7d0)*B | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-+-------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++----------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|servo_driver          | (C:0x2bf20)+(A:0x7d0)*B           | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|servo_driver          | (C:0x2bf20)+(A:0x7d0)*B           | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|TrackerTopLevel       | (D'+(A:0x3fffffd8))*(B:0x258)     | 17     | 10     | -      | 9      | 27     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
+|frameBuffer_greyScale | PCIN+(A:0x0):B+(C:0xffffffffffec) | 30     | 10     | 6      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|TrackerTopLevel       | (D'+(A:0x3fffffd8))*(B:0x258)     | 17     | 10     | -      | 9      | 27     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
+|frameBuffer_greyScale | PCIN+(A:0x0):B+(C:0xffffffffffec) | 30     | 10     | 6      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++----------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -154,19 +373,20 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1327.617 ; gain = 549.617
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1337.758 ; gain = 556.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1343.246 ; gain = 565.246
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1340.195 ; gain = 559.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance camera_top/cam/camConfig/rom1/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1344.023 ; gain = 566.023
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1368.828 ; gain = 587.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -184,49 +404,53 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.848 ; gain = 572.848
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1369.910 ; gain = 588.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.848 ; gain = 572.848
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1369.910 ; gain = 588.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.848 ; gain = 572.848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1369.910 ; gain = 588.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.848 ; gain = 572.848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1369.910 ; gain = 588.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.848 ; gain = 572.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1369.910 ; gain = 588.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.848 ; gain = 572.848
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1369.910 ; gain = 588.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 DSP Final Report (the ' indicates corresponding REG is set)
-+-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|servo_driver | C+A*B       | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|servo_driver | C+A*B       | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-+-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++----------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|servo_driver          | C+A*B         | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|servo_driver          | C+A*B         | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|TrackerTopLevel       | D'+A*B        | 30     | 10     | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|frameBuffer_greyScale | (PCIN+A:B+C)' | 0      | 10     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|TrackerTopLevel       | D'+A*B        | 30     | 10     | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|frameBuffer_greyScale | (PCIN+A:B+C)' | 0      | 10     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++----------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
 Report BlackBoxes: 
@@ -234,47 +458,56 @@ Report BlackBoxes:
 |      |BlackBox name |Instances |
 +------+--------------+----------+
 |1     |clk_wiz_1     |         1|
+|2     |vga_to_hdmi   |         1|
+|3     |bram          |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+--------+------+
-|      |Cell    |Count |
-+------+--------+------+
-|1     |clk_wiz |     1|
-|2     |CARRY4  |    66|
-|3     |DSP48E1 |     2|
-|4     |LUT1    |    66|
-|5     |LUT2    |    40|
-|6     |LUT3    |     2|
-|7     |LUT4    |     2|
-|8     |LUT5    |     4|
-|9     |LUT6    |     6|
-|10    |FDRE    |    94|
-|11    |IBUF    |    16|
-|12    |OBUF    |     2|
-+------+--------+------+
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |bram        |     1|
+|2     |clk_wiz     |     1|
+|3     |vga_to_hdmi |     1|
+|4     |BUFG        |     1|
+|5     |CARRY4      |    82|
+|6     |DSP48E1     |     6|
+|9     |LUT1        |   137|
+|10    |LUT2        |    68|
+|11    |LUT3        |    23|
+|12    |LUT4        |    49|
+|13    |LUT5        |    45|
+|14    |LUT6        |    84|
+|15    |RAMB18E1    |     1|
+|16    |FDRE        |   299|
+|17    |FDSE        |     7|
+|18    |IBUF        |    28|
+|19    |OBUF        |     5|
+|20    |OBUFT       |     2|
++------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.848 ; gain = 572.848
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1369.910 ; gain = 588.855
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1350.848 ; gain = 523.801
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1350.848 ; gain = 572.848
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1369.910 ; gain = 540.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1369.910 ; gain = 588.855
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1362.887 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 68 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1381.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1363.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1389.602 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: a3de87e2
+Synth Design complete, checksum: 90f230eb
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 4 Warnings, 1 Critical Warnings and 0 Errors encountered.
+70 Infos, 52 Warnings, 44 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1363.527 ; gain = 958.938
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1389.602 ; gain = 984.828
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/TrackerTopLevel.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TrackerTopLevel_utilization_synth.rpt -pb TrackerTopLevel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 17:34:14 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 18:16:41 2024...

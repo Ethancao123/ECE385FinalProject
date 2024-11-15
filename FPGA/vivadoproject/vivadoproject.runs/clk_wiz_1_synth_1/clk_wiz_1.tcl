@@ -82,13 +82,16 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.cache/wt [current_project]
 set_property parent.project_path C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.xpr [current_project]
+set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths c:/Users/ethan/Downloads/RD_hdmi_ip2020/hdmi_tx_1.0 [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+read_ip -quiet C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
