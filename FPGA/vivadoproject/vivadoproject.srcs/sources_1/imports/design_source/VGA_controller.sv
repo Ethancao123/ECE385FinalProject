@@ -23,7 +23,7 @@
 //-------------------------------------------------------------------------
 
 
-module  vga_controller ( input        pixel_clk,        // 50 MHz clock
+module  vga_controller2 ( input        pixel_clk,        // 50 MHz clock
                                       reset,            // reset signal
                          output logic hs,               // Horizontal sync pulse.  Active low
 								      vs,               // Vertical sync pulse.  Active low

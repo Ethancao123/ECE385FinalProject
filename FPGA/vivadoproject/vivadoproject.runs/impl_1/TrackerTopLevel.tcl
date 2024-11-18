@@ -126,8 +126,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param tcl.collectionResultDisplayLimit 0
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 6
+  set_param synth.incrementalSynthesisCache {C:/Users/ethan/Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/.Xil/Vivado-24340-DESKTOP-JA1U62V/incrSyn}
   set_param xicom.use_bs_reader 1
   open_checkpoint TrackerTopLevel_routed.dcp
   set_property webtalk.parent_dir C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.cache/wt [current_project]

@@ -16,20 +16,6 @@ module servo_driver (
         countcutoff = offset + angle*2000+180000;
     end
     
-//    logic [15:0] clk_count = 0;
-//    assign clk_180kHz = clk_count > 500;
-//    always_ff @ (posedge clk_180MHz)
-//    begin
-//        if(reset) begin
-//            clk_count <= 0;
-//        end else begin
-//            clk_count <= clk_count + 1;
-//        end
-//        if(clk_count >= 1000) begin
-//            clk_count <= 0;
-//        end
-//    end
-    
     always_ff @ (posedge clk_180MHz)
     begin
         if(reset || overflow) begin

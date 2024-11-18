@@ -9,6 +9,7 @@
 
 module frameBuffer_greyScale(
         input clk,
+        input clk25,
         input reset,
         input redHue,
         input edgeOn,
@@ -19,7 +20,8 @@ module frameBuffer_greyScale(
         input [8:0] outY,
         input [15:0] inPixel,
         input pixelValid,
-        output reg [3:0] outPixel          
+//        output reg [3:0] outPixel          
+        output wire [3:0] outPixel    
     );
     
     parameter ROW_LENGTH = 600;
@@ -38,7 +40,8 @@ module frameBuffer_greyScale(
     wire enableWrite = ((inX < 620) && (inX >= 20) && (inY < 440) && (inY >= 40)) ? 1'b1:1'b0;
     
     // variables for reading from BRAM
-    reg [17:0] outAddress;
+//    reg [17:0] outAddress;
+    wire [17:0] outAddress;
     wire [3:0] outputPixel;
     wire [3:0] outputPixelEdge_temp; // used for edge detector
     
@@ -55,7 +58,7 @@ module frameBuffer_greyScale(
     // since r == g == b
     bram greyScale(
         .clka(clk),
-        .clkb(clk),
+        .clkb(clk25),
         .addra(inAddress),
         .addrb(outAddress),
         .dina(inputPixel),
@@ -99,12 +102,12 @@ module frameBuffer_greyScale(
     
     
     // always block for reading from BRAM  
-    always@(posedge clk)
-    begin
-        outAddress <= (outX-COL_BIAS) + (outY-ROW_BIAS)*ROW_LENGTH;
-        outPixel <= outputPixel;
-    end
-
-
+//    always_comb 
+//    begin
+//        outAddress <= (outX-COL_BIAS) + (outY-ROW_BIAS)*ROW_LENGTH;
+//        outPixel <= outputPixel;
+//    end
+assign outAddress = (outX-COL_BIAS) + (outY-ROW_BIAS)*ROW_LENGTH;
+assign outPixel = outputPixel;
    
 endmodule

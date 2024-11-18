@@ -8,10 +8,12 @@ module vga_controller (
     VS,
     hcounter,
     vcounter,
-    blank
+    blank,
+    reset
 );
 
 	input pixel_clk;
+	input reset;
 	output HS, VS, blank;
 	output [10:0] hcounter, vcounter;
 
@@ -40,14 +42,14 @@ module vga_controller (
 
 	always@(posedge pixel_clk)begin
 //	   hcounter <= inX;
-		if (hcounter == HMAX) hcounter <= 0;
+		if (hcounter == HMAX | reset) hcounter <= 0;
 		else hcounter <= hcounter + 1;
 	end
 
 	always@(posedge pixel_clk)begin
 //	   vcounter = inY;
-		if(hcounter == HMAX) begin
-			if(vcounter == VMAX) vcounter <= 0;
+		if(hcounter == HMAX | reset) begin
+			if(vcounter == VMAX | reset) vcounter <= 0;
 			else vcounter <= vcounter + 1; 
 		end
 	end

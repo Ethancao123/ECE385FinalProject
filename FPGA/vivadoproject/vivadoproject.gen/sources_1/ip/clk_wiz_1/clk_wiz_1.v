@@ -56,9 +56,10 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// clk_out1__125.00000______0.000______50.0______193.776____230.188
-// clk_out2__179.68750______0.000______50.0______183.746____230.188
-// clk_out3__25.07267______0.000______50.0______258.288____230.188
+// clk_out1__125.00000______0.000______50.0______130.483____106.803
+// clk_out2__25.00000______0.000______50.0______181.660____106.803
+// clk_out3__175.00000______0.000______50.0______122.529____106.803
+// clk_out4__97.22222______0.000______50.0______137.424____106.803
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -67,7 +68,7 @@
 
 `timescale 1ps/1ps
 
-(* CORE_GENERATION_INFO = "clk_wiz_1,clk_wiz_v6_0_11_0_0,{component_name=clk_wiz_1,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=3,clkin1_period=10.000,clkin2_period=10.000,use_power_down=false,use_reset=true,use_locked=true,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
+(* CORE_GENERATION_INFO = "clk_wiz_1,clk_wiz_v6_0_11_0_0,{component_name=clk_wiz_1,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=4,clkin1_period=10.000,clkin2_period=10.000,use_power_down=false,use_reset=true,use_locked=true,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
 
 module clk_wiz_1 
  (
@@ -75,6 +76,7 @@ module clk_wiz_1
   output        clk_out1,
   output        clk_out2,
   output        clk_out3,
+  output        clk_out4,
   // Status and control signals
   input         reset,
   output        locked,
@@ -88,6 +90,7 @@ module clk_wiz_1
   .clk_out1(clk_out1),
   .clk_out2(clk_out2),
   .clk_out3(clk_out3),
+  .clk_out4(clk_out4),
   // Status and control signals               
   .reset(reset), 
   .locked(locked),

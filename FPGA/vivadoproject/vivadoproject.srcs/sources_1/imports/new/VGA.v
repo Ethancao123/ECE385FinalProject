@@ -10,8 +10,9 @@ module VGA(
     input   wire pixel_clk,   //25MHZ clk
     // From memory
     input       [3:0] vgaIn,
+    input   wire reset,
     output      [9:0] outX,
-    output      [8:0] outY,
+    output      [9:0] outY,
     
     // To VGA
     output  reg [3:0] VGA_R,
@@ -19,6 +20,7 @@ module VGA(
     output  reg [3:0] VGA_B,
     output  wire VGA_HS,
     output  wire VGA_VS,
+    output  wire vga_blank,
     
     // object detection
     input [9:0]idealX,
@@ -28,11 +30,12 @@ module VGA(
     input redHue,
     input edgeOn,
     input visualSW,
-    input idealStart
+    input idealStart,
+    input reset
 );
 
 wire [10:0] vga_hcnt, vga_vcnt;
-wire vga_blank;
+
 reg counter;
 reg [9:0] ballX_reg;
 reg [8:0] ballY_reg;
@@ -50,7 +53,8 @@ vga_controller vga_control(
     .VS(VGA_VS),
     .hcounter(vga_hcnt),
     .vcounter(vga_vcnt),
-    .blank(vga_blank)
+    .blank(vga_blank),
+    .reset(reset)
 );
 
 
@@ -75,7 +79,8 @@ end
 always @(*) begin
     // Set pixels to black during Sync. Failure to do so will result in dimmed colors or black screens.
     // also write 0 if we are out of bounds for the VGA display
-    if (vga_blank | ~inBounds) begin 
+//    if (vga_blank | ~inBounds) begin 
+      if (~inBounds) begin
         VGA_R = 0;
         VGA_G = 0;
         VGA_B = 0;
