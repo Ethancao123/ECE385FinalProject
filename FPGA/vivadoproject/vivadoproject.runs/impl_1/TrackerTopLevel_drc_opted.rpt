@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Tue Dec  3 17:30:26 2024
+| Date         : Wed Dec  4 16:33:03 2024
 | Host         : DESKTOP-JA1U62V running 64-bit major release  (build 9200)
 | Command      : report_drc -file TrackerTopLevel_drc_opted.rpt -pb TrackerTopLevel_drc_opted.pb -rpx TrackerTopLevel_drc_opted.rpx
 | Design       : TrackerTopLevel
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 7
+             Violations found: 9
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| DPIP-1   | Warning  | Input pipelining                                    | 5          |
+| DPIP-1   | Warning  | Input pipelining                                    | 7          |
 | PLCK-12  | Warning  | Clock Placer Checks                                 | 1          |
 +----------+----------+-----------------------------------------------------+------------+
 
@@ -65,10 +65,20 @@ Related violations: <none>
 
 DPIP-1#4 Warning
 Input pipelining  
-DSP vid_address input vid_address/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP red3 input red3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#5 Warning
+Input pipelining  
+DSP red3__0 input red3__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP vid_address input vid_address/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
 Input pipelining  
 DSP vid_address input vid_address/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>

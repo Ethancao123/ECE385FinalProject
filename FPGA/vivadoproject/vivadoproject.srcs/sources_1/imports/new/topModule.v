@@ -44,7 +44,8 @@ module topModule(
     input [9:0] drawY,
     
     input wire [17:0] outAddress,
-    output wire [3:0] outputPixel
+    output wire [3:0] outputPixel,
+    output wire [3:0] redPixel
 );
 
     wire clk25_reg;
@@ -123,7 +124,8 @@ module topModule(
         .pixelValid(pixelValid),
 //        .outPixel(pixelVGA)
         .outputPixel(outputPixel),
-        .outAddress(outAddress)
+        .outAddress(outAddress),
+        .redPixel(redPixel)
     );
     
     

@@ -30,24 +30,25 @@ module target(
         input logic vsync
     );
     //15x10
-    logic [8:0] rowreg [149:0];
-    assign blocknum = drawX / 15 + drawY * 15 / 10;
-    logic [7:0] maxInd;
+    logic [8:0] rowreg[170];
+    logic [8:0] blocknum;
+    assign blocknum = drawX / 40 + (drawY / 40) * 15;
+    logic [8:0] maxInd, rollingInd;
     logic [8:0] maxVal;
-    assign targetX = (maxInd % 15) * 40;
-    assign targetY = (maxInd / 15) * 40;
+    assign targetX = (maxInd % 15);
+    assign targetY = (maxInd / 15);
     always_ff @(posedge clk) begin
         if(~vsync) begin
-//            maxInd <= 75;
             maxVal <= 0;
-            for (int i = 0; i < 150; i = i + 1) begin
+            for (integer i = 0; i < 170; i = i + 1) begin
                 rowreg[i] <= 0;
             end
+            maxInd <= rollingInd;
         end else begin
             rowreg[blocknum] <= rowreg[blocknum] + (pixelin > 4);
             if(rowreg[blocknum] > maxVal) begin
                 maxVal <= rowreg[blocknum];
-                maxInd <= blocknum;
+                rollingInd <= blocknum;
             end
         end
     end

@@ -32,13 +32,13 @@ module TrackerTopLevel (
     logic [3:0] red;
     logic [3:0] green;
     logic [3:0] blue;
-    logic [3:0] vid_pixel;
+    logic [3:0] vid_pixel, red_pixel;
     logic [17:0] vid_address;
     logic pixel_valid;
     logic vid_vsync;
     logic vid_hsync;
     logic vid_vde;
-    logic [9:0] vid_drawX, vid_drawY;
+    logic [9:0] vid_drawX, vid_drawY, tarX, tarY;
     
     logic [16:0] cam_vramb_addr;
     logic [8:0] cam_vramb_data;
@@ -100,7 +100,8 @@ module TrackerTopLevel (
         .drawY(vid_drawY),
         
         .outputPixel(vid_pixel),
-        .outAddress(vid_address)
+        .outAddress(vid_address),
+        .redPixel(red_pixel)
     );
     
     vga_controller2 vga_controller2(
@@ -113,7 +114,7 @@ module TrackerTopLevel (
         .drawY(vid_drawY)
     );
     always_comb begin
-        if(vid_drawX == tarX || vid_drawY == tarY) begin
+        if(vid_drawX == (tarX * 40) || vid_drawY == (tarY * 40)) begin
             red = 0;
             green = 0;
             blue = 8;

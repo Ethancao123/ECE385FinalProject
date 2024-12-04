@@ -106,6 +106,13 @@ set_property PACKAGE_PIN N15 [get_ports clkin]
 set_property IOSTANDARD LVCMOS33 [get_ports clkin]
 
 
+
+connect_debug_port u_ila_0/probe1 [get_nets [list {target/maxInd_reg[0]_0}]]
+connect_debug_port u_ila_0/probe2 [get_nets [list {target/maxInd_reg[0]_1}]]
+
+
+connect_debug_port u_ila_0/probe6 [get_nets [list target/vsync]]
+
 set_property OFFCHIP_TERM NONE [get_ports Servo1PWM]
 set_property OFFCHIP_TERM NONE [get_ports Servo2PWM]
 set_property OFFCHIP_TERM NONE [get_ports camera_clock]

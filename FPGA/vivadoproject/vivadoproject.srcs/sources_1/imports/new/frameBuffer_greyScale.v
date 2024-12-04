@@ -23,7 +23,8 @@ module frameBuffer_greyScale(
 //        output reg [3:0] outPixel          
         output wire [3:0] outPixel,   
         input wire [17:0] outAddress,
-        output wire [3:0] outputPixel
+        output wire [3:0] outputPixel,
+        output reg [3:0] redPixel
     );
     
     parameter ROW_LENGTH = 600;
@@ -76,6 +77,10 @@ module frameBuffer_greyScale(
     // always block for writing to BRAM    
     always@(posedge clk)
     begin
+        if ((inPixel[15:12] >= THRESHOLD_MIN2) && (inPixel[10:7] < THRESHOLD_MAX2) && (inPixel[4:1] < THRESHOLD_MAX2))
+            redPixel <= 8;
+        else
+            redPixel <= 0;  
         if(enableWrite & pixelValid)
         begin
             inAddress <= (inX-COL_BIAS) + (inY-ROW_BIAS)*ROW_LENGTH;
