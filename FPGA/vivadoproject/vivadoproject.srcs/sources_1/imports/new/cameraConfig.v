@@ -37,7 +37,7 @@ module cameraConfig(
     26: dout <= 16'h0e_61; // COM5(0x0E) 0x61
     27: dout <= 16'h0f_4b; // COM6(0x0F) 0x4B
     28: dout <= 16'h16_02;
-    29: dout <= 16'h1e_27; // MVFP (0x1E) 0x07  // FLIP AND MIRROR IMAGE 0x3x
+    29: dout <= 16'h1e_37; // MVFP (0x1E) 0x07  // FLIP AND MIRROR IMAGE 0x3x
     30: dout <= 16'h21_02;
     31: dout <= 16'h22_91;
     32: dout <= 16'h29_07;
@@ -68,6 +68,7 @@ module cameraConfig(
     56: dout <= 16'h13_8F; // turn on Automatic Gain Control with fast algorithm
     57: dout <= 16'h70_4A; // horizontal scale pattern default, bit[7] controls test (C=on, 4=off)
     58: dout <= 16'h71_35; // vertical scale pattern default,   bit[7] controls test (B=on, 3=off)
+    
     default:  dout <= 16'hFF_FF;         //mark end of ROM
     endcase
 

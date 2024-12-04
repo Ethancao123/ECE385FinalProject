@@ -32,6 +32,8 @@ module TrackerTopLevel (
     logic [3:0] red;
     logic [3:0] green;
     logic [3:0] blue;
+    logic [3:0] vid_pixel;
+    logic [17:0] vid_address;
     logic pixel_valid;
     logic vid_vsync;
     logic vid_hsync;
@@ -84,9 +86,9 @@ module TrackerTopLevel (
         .data(camera_datain),
     
     // display
-        .red(red),
-        .green(green),
-        .blue(blue),
+//        .red(red),
+//        .green(green),
+//        .blue(blue),
 //        .VS(vid_vsync),
 //        .HS(vid_hsync),
 //        .vde(vid_vde),
@@ -95,7 +97,10 @@ module TrackerTopLevel (
         .edgeOn(sw_i[1]),
         .visualSW(sw_i[2]),
         .drawX(vid_drawX),
-        .drawY(vid_drawY)
+        .drawY(vid_drawY),
+        
+        .outputPixel(vid_pixel),
+        .outAddress(vid_address)
     );
     
     vga_controller2 vga_controller2(
@@ -107,7 +112,23 @@ module TrackerTopLevel (
         .drawX(vid_drawX),
         .drawY(vid_drawY)
     );
-    
+    always_comb begin
+        if(vid_drawX == tarX || vid_drawY == tarY) begin
+            red = 0;
+            green = 0;
+            blue = 8;
+        end 
+        else if(vid_drawX > 600 || vid_drawY > 400) begin
+            red = 0;
+            green = 0;
+            blue = 0;
+        end else begin
+            red = vid_pixel;
+            green = vid_pixel;
+            blue = vid_pixel;
+        end
+    end
+    assign vid_address = vid_drawX + vid_drawY * 600;
     
     vga_to_hdmi vga_to_hdmi ( //instantiate VGA-HDMI IP here //change
         //Clocking and Reset
@@ -134,6 +155,16 @@ module TrackerTopLevel (
         .TMDS_CLK_N(hdmi_tmds_clk_n),          
         .TMDS_DATA_P(hdmi_tmds_data_p),         
         .TMDS_DATA_N(hdmi_tmds_data_n)          
+    );
+    
+    target target(
+        .clk(clk_out25Mhz),
+        .drawX(vid_drawX),
+        .drawY(vid_drawY),
+        .pixelin(vid_pixel),
+        .targetX(tarX),
+        .targetY(tarY),
+        .vsync(vid_vsync)
     );
     
        

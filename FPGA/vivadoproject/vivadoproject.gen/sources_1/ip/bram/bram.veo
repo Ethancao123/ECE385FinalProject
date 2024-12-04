@@ -58,12 +58,12 @@ bram your_instance_name (
   .clka(clka),    // input wire clka
   .ena(ena),      // input wire ena
   .wea(wea),      // input wire [0 : 0] wea
-  .addra(addra),  // input wire [16 : 0] addra
-  .dina(dina),    // input wire [15 : 0] dina
+  .addra(addra),  // input wire [18 : 0] addra
+  .dina(dina),    // input wire [3 : 0] dina
   .clkb(clkb),    // input wire clkb
   .enb(enb),      // input wire enb
-  .addrb(addrb),  // input wire [16 : 0] addrb
-  .doutb(doutb)  // output wire [15 : 0] doutb
+  .addrb(addrb),  // input wire [18 : 0] addrb
+  .doutb(doutb)  // output wire [3 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

@@ -70,12 +70,10 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 6
-set_param synth.incrementalSynthesisCache {C:/Users/ethan/Downloads/DetectoVision-main/DetectoVision-main/Vivado Files/Basys/.Xil/Vivado-24340-DESKTOP-JA1U62V/incrSyn}
+set_param synth.incrementalSynthesisCache C:/Users/ethan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-37404-DESKTOP-JA1U62V/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -99,6 +97,7 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/ServoDriver.sv
   C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/design_source/VGA_controller.sv
+  C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv
   C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv
 }
 read_verilog -library xil_defaultlib {
@@ -127,7 +126,7 @@ set_property used_in_implementation false [get_files -all c:/Users/ethan/Documen
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
 
-read_ip -quiet c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/ip/bram3/bram3.xci
+read_ip -quiet C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/ip/bram3/bram3.xci
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/bram3/bram3_ooc.xdc]
 
 OPTRACE "Adding files" END { }

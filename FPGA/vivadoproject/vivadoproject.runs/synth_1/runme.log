@@ -27,16 +27,19 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3256
+INFO: [Synth 8-7075] Helper process launched with PID 12900
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:64]
-WARNING: [Synth 8-11121] redeclaration of ANSI port 'clk25_reg' is not allowed [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:47]
+INFO: [Synth 8-11241] undeclared symbol 'blocknum', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:34]
+INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:66]
+INFO: [Synth 8-11241] undeclared symbol 'tarX', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:165]
+INFO: [Synth 8-11241] undeclared symbol 'tarY', assumed default net type 'wire' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:166]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'clk25_reg' is not allowed [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:50]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/hdl/encode.v:145]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/hdl/encode.v:146]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/hdl/encode.v:147]
 WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/hdl/encode.v:148]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.000 ; gain = 409.477
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1189.418 ; gain = 409.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'TrackerTopLevel' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'servo_driver' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/ServoDriver.sv:1]
@@ -129,11 +132,11 @@ INFO: [Synth 8-638] synthesizing module 'bram' [c:/Users/ethan/Documents/GitHub/
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 131072 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 131072 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 17 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 307200 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 307200 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 19 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -143,11 +146,11 @@ INFO: [Synth 8-638] synthesizing module 'bram' [c:/Users/ethan/Documents/GitHub/
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
-	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 131072 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 131072 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 17 - type: integer 
+	Parameter C_WRITE_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 4 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 307200 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 307200 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 19 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -172,49 +175,51 @@ INFO: [Synth 8-638] synthesizing module 'bram' [c:/Users/ethan/Documents/GitHub/
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 60 - type: string 
-	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     33.737324 mW - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 36 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 3 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     16.198881 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_5' declared at 'c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/bram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_5' [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/bram/synth/bram.vhd:243]
 INFO: [Synth 8-256] done synthesizing module 'bram' (0#1) [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/bram/synth/bram.vhd:73]
-WARNING: [Synth 8-689] width (18) of port connection 'addra' does not match port width (17) of module 'bram' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:62]
-WARNING: [Synth 8-689] width (18) of port connection 'addrb' does not match port width (17) of module 'bram' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:63]
-WARNING: [Synth 8-689] width (4) of port connection 'doutb' does not match port width (16) of module 'bram' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'frameBuffer_greyScale' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:10]
-WARNING: [Synth 8-689] width (10) of port connection 'outY' does not match port width (9) of module 'frameBuffer_greyScale' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:118]
+WARNING: [Synth 8-689] width (10) of port connection 'outY' does not match port width (9) of module 'frameBuffer_greyScale' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:121]
+WARNING: [Synth 8-7071] port 'outPixel' of module 'frameBuffer_greyScale' is unconnected for instance 'frame' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:111]
+WARNING: [Synth 8-7023] instance 'frame' of module 'frameBuffer_greyScale' has 15 connections declared, but only 14 given [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:111]
 INFO: [Synth 8-6157] synthesizing module 'houghAccumulator3' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:8]
-INFO: [Synth 8-6157] synthesizing module 'bram3' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-22308-DESKTOP-JA1U62V/realtime/bram3_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'bram3' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-22308-DESKTOP-JA1U62V/realtime/bram3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bram3' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-37092-DESKTOP-JA1U62V/realtime/bram3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bram3' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/.Xil/Vivado-37092-DESKTOP-JA1U62V/realtime/bram3_stub.v:5]
 WARNING: [Synth 8-689] width (18) of port connection 'addra' does not match port width (17) of module 'bram3' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:54]
 WARNING: [Synth 8-689] width (18) of port connection 'addrb' does not match port width (17) of module 'bram3' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:55]
 WARNING: [Synth 8-567] referenced signal 'accTemp' should be on the sensitivity list [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:226]
 WARNING: [Synth 8-567] referenced signal 'Y_reg' should be on the sensitivity list [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:226]
 WARNING: [Synth 8-567] referenced signal 'X_reg' should be on the sensitivity list [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:226]
 INFO: [Synth 8-6155] done synthesizing module 'houghAccumulator3' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:8]
-WARNING: [Synth 8-689] width (6) of port connection 'accBest' does not match port width (4) of module 'houghAccumulator3' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:131]
+WARNING: [Synth 8-689] width (6) of port connection 'accBest' does not match port width (4) of module 'houghAccumulator3' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:136]
 INFO: [Synth 8-6157] synthesizing module 'segDisplay' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/segDisplay.v:9]
 INFO: [Synth 8-226] default block is never used [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/segDisplay.v:33]
 INFO: [Synth 8-226] default block is never used [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/segDisplay.v:45]
 INFO: [Synth 8-6155] done synthesizing module 'segDisplay' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/segDisplay.v:9]
-WARNING: [Synth 8-689] width (24) of port connection 'x' does not match port width (16) of module 'segDisplay' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:140]
+WARNING: [Synth 8-689] width (24) of port connection 'x' does not match port width (16) of module 'segDisplay' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:145]
 INFO: [Synth 8-6157] synthesizing module 'VGA' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/VGA.v:9]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/vga_controller.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/vga_controller.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'VGA' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/VGA.v:9]
-WARNING: [Synth 8-689] width (9) of port connection 'outY' does not match port width (10) of module 'VGA' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:169]
-WARNING: [Synth 8-7023] instance 'display' of module 'VGA' has 18 connections declared, but only 17 given [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:159]
+WARNING: [Synth 8-689] width (9) of port connection 'outY' does not match port width (10) of module 'VGA' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:174]
+WARNING: [Synth 8-7023] instance 'display' of module 'VGA' has 18 connections declared, but only 17 given [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:164]
 INFO: [Synth 8-6155] done synthesizing module 'topModule' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:9]
-WARNING: [Synth 8-7071] port 'SEG' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:69]
-WARNING: [Synth 8-7071] port 'AN' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:69]
-WARNING: [Synth 8-7071] port 'DP' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:69]
-WARNING: [Synth 8-7071] port 'VS' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:69]
-WARNING: [Synth 8-7071] port 'HS' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:69]
-WARNING: [Synth 8-7071] port 'vde' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:69]
-WARNING: [Synth 8-7023] instance 'camera_top' of module 'topModule' has 28 connections declared, but only 22 given [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:69]
+WARNING: [Synth 8-7071] port 'SEG' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7071] port 'AN' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7071] port 'DP' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7071] port 'red' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7071] port 'green' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7071] port 'blue' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7071] port 'VS' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7071] port 'HS' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7071] port 'vde' of module 'topModule' is unconnected for instance 'camera_top' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
+WARNING: [Synth 8-7023] instance 'camera_top' of module 'topModule' has 30 connections declared, but only 21 given [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:71]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller2' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller2' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
-WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller2' is unconnected for instance 'vga_controller2' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:101]
-WARNING: [Synth 8-7023] instance 'vga_controller2' of module 'vga_controller2' has 8 connections declared, but only 7 given [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:101]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller2' is unconnected for instance 'vga_controller2' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:106]
+WARNING: [Synth 8-7023] instance 'vga_controller2' of module 'vga_controller2' has 8 connections declared, but only 7 given [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:106]
 INFO: [Synth 8-6157] synthesizing module 'vga_to_hdmi' [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/synth/vga_to_hdmi.v:53]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/hdl/hdmi_tx_v1_0.v:70]
 INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/hdl/srldelay.v:70]
@@ -237,31 +242,127 @@ INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scrip
 INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_v1_0' (0#1) [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/hdl/hdmi_tx_v1_0.v:70]
 INFO: [Synth 8-6155] done synthesizing module 'vga_to_hdmi' (0#1) [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/synth/vga_to_hdmi.v:53]
+INFO: [Synth 8-6157] synthesizing module 'target' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'target' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:23]
+WARNING: [Synth 8-689] width (1) of port connection 'targetX' does not match port width (10) of module 'target' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:165]
+WARNING: [Synth 8-689] width (1) of port connection 'targetY' does not match port width (10) of module 'target' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:166]
 INFO: [Synth 8-6155] done synthesizing module 'TrackerTopLevel' (0#1) [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/TrackerTopLevel.sv:1]
+WARNING: [Synth 8-3848] Net outPixel in module/entity frameBuffer_greyScale does not have driver. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:24]
+WARNING: [Synth 8-3848] Net pixelVGA in module/entity topModule does not have driver. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/topModule.v:54]
 WARNING: [Synth 8-6014] Unused sequential element hdmi_ctl1_reg was removed.  [c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/vga_to_hdmi/hdl/hdmi_tx_v1_0.v:148]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[149] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[148] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[147] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[146] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[145] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[144] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[143] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[142] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[141] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[140] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[139] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[138] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[137] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[136] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[135] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[134] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[133] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[132] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[131] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[130] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[129] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[128] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[127] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[126] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[125] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[124] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[123] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[122] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[121] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[120] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[119] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[118] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[117] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[116] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[115] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[114] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[113] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[112] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[111] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[110] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[109] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[108] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[107] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[106] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[105] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[104] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[103] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[102] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[101] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[100] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[99] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[98] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[97] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[96] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[95] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[94] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[93] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[92] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[91] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[90] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[89] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[88] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[87] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[86] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[85] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[84] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[83] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[82] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[81] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[80] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[79] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[78] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[77] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[76] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[75] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[74] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[73] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[72] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[71] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[70] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[69] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[68] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[67] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[66] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[65] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[64] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[63] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[62] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[61] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[60] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[59] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[58] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[57] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[56] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[55] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[54] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[53] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[52] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+WARNING: [Synth 8-6014] Unused sequential element rowreg_reg[51] was removed.  [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/new/target.sv:44]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-7129] Port reset in module VGA is either unconnected or has no load
 WARNING: [Synth 8-7129] Port idealY[9] in module VGA is either unconnected or has no load
 WARNING: [Synth 8-7129] Port redHue in module VGA is either unconnected or has no load
 WARNING: [Synth 8-7129] Port edgeOn in module VGA is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CLKB in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[15] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[14] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[13] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[12] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[11] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[10] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[9] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[8] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[7] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[6] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[5] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[4] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[3] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[2] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[1] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[0] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[18] in module blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[17] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[16] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[15] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[14] in module blk_mem_output_block is either unconnected or has no load
@@ -279,81 +380,91 @@ WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_output_block is ei
 WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized44 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized43 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized42 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized41 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized40 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_prim_wrapper__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[1] in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1572.805 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1548.051 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -382,24 +493,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/TrackerTopLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1572.805 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1548.051 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1572.805 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1548.051 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'camera_top/acc3/accumulator' at clock pin 'clka' is different from the actual clock period '10.286', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -410,7 +521,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for camera_top/frame/greyScale. (cons
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for camera_top/acc3/accumulator. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'FSM_state_reg' in module 'cameraCaptureImage'
 INFO: [Synth 8-802] inferred FSM for state register 'caseReg_reg' in module 'houghAccumulator3'
@@ -441,7 +552,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'idealY_reg' [C:/Users/ethan
 WARNING: [Synth 8-327] inferring latch for variable 'VGA_R_reg' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/VGA.v:84]
 WARNING: [Synth 8-327] inferring latch for variable 'VGA_G_reg' [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/VGA.v:85]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -452,7 +563,7 @@ Detailed RTL Component Info :
 	   3 Input   12 Bit       Adders := 2     
 	   2 Input   11 Bit       Adders := 5     
 	   2 Input   10 Bit       Adders := 10    
-	   2 Input    9 Bit       Adders := 5     
+	   2 Input    9 Bit       Adders := 7     
 	   2 Input    8 Bit       Adders := 1     
 	   3 Input    6 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 1     
@@ -461,6 +572,7 @@ Detailed RTL Component Info :
 	   2 Input    4 Bit       Adders := 5     
 	   8 Input    4 Bit       Adders := 6     
 	   2 Input    2 Bit       Adders := 2     
+	   2 Input    1 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 42    
 +---Registers : 
@@ -470,10 +582,11 @@ Detailed RTL Component Info :
 	               15 Bit    Registers := 1     
 	               11 Bit    Registers := 2     
 	               10 Bit    Registers := 9     
-	                9 Bit    Registers := 6     
-	                8 Bit    Registers := 10    
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
-	                5 Bit    Registers := 5     
+	                5 Bit    Registers := 3     
 	                4 Bit    Registers := 21    
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
@@ -487,13 +600,15 @@ Detailed RTL Component Info :
 	   2 Input   10 Bit        Muxes := 6     
 	  22 Input   10 Bit        Muxes := 1     
 	   4 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 3     
 	  14 Input    8 Bit        Muxes := 1     
 	   4 Input    8 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 5     
+	   3 Input    8 Bit        Muxes := 1     
 	   8 Input    6 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 12    
 	  14 Input    4 Bit        Muxes := 2     
-	   2 Input    4 Bit        Muxes := 10    
+	   2 Input    4 Bit        Muxes := 11    
 	   3 Input    4 Bit        Muxes := 2     
 	   4 Input    4 Bit        Muxes := 1     
 	   4 Input    3 Bit        Muxes := 1     
@@ -502,7 +617,7 @@ Detailed RTL Component Info :
 	   2 Input    2 Bit        Muxes := 2     
 	   3 Input    2 Bit        Muxes := 1     
 	  14 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 117   
+	   2 Input    1 Bit        Muxes := 309   
 	   4 Input    1 Bit        Muxes := 7     
 	   3 Input    1 Bit        Muxes := 4     
 	  14 Input    1 Bit        Muxes := 11    
@@ -529,7 +644,6 @@ DSP Report: operator PWM2 is absorbed into DSP p_1_out.
 DSP Report: Generating DSP p_1_out, operation Mode is: (C:0x2bf20)+(A:0x7d0)*B.
 DSP Report: operator p_1_out is absorbed into DSP p_1_out.
 DSP Report: operator PWM2 is absorbed into DSP p_1_out.
-WARNING: [Synth 8-3936] Found unconnected internal register 'frame/inAddress_reg' and it is trimmed from '18' to '17' bits. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/frameBuffer_greyScale.v:62]
 WARNING: [Synth 8-3936] Found unconnected internal register 'acc3/outAddress_reg' and it is trimmed from '18' to '17' bits. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:55]
 WARNING: [Synth 8-3936] Found unconnected internal register 'acc3/inAddress_reg' and it is trimmed from '18' to '17' bits. [C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/imports/new/houghAccumulator3.v:54]
 WARNING: [Synth 8-6040] Register cam/camConfig/config_1/rom_addr_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
@@ -540,11 +654,6 @@ DSP Report: operator frame/inAddress2 is absorbed into DSP frame/inAddress1.
 DSP Report: Generating DSP frame/inAddress_reg, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffec).
 DSP Report: register frame/inAddress_reg is absorbed into DSP frame/inAddress_reg.
 DSP Report: operator frame/inAddress0 is absorbed into DSP frame/inAddress_reg.
-DSP Report: Generating DSP frame/outAddress0, operation Mode is: (D+(A:0x3fffffd8))*(B:0x258).
-DSP Report: operator frame/outAddress0 is absorbed into DSP frame/outAddress0.
-DSP Report: operator frame/outAddress1 is absorbed into DSP frame/outAddress0.
-DSP Report: Generating DSP frame/outAddress, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffec).
-DSP Report: operator frame/outAddress is absorbed into DSP frame/outAddress.
 DSP Report: Generating DSP acc3/inAddress1, operation Mode is: (D'+(A:0x3fffffa1))*(B:0x1c2).
 DSP Report: register display/vga_control/vcounter_reg is absorbed into DSP acc3/inAddress1.
 DSP Report: operator acc3/inAddress1 is absorbed into DSP acc3/inAddress1.
@@ -560,10 +669,32 @@ DSP Report: Generating DSP acc3/outAddress_reg, operation Mode is: PCIN+(A:0x0):
 DSP Report: register acc3/X_reg_reg is absorbed into DSP acc3/outAddress_reg.
 DSP Report: register acc3/outAddress_reg is absorbed into DSP acc3/outAddress_reg.
 DSP Report: operator acc3/outAddress0 is absorbed into DSP acc3/outAddress_reg.
+DSP Report: Generating DSP vid_address, operation Mode is: C+A*(B:0x258).
+DSP Report: operator vid_address is absorbed into DSP vid_address.
+DSP Report: operator vid_address0 is absorbed into DSP vid_address.
 WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/accBest_reg[3]) is unused and will be removed from module TrackerTopLevel.
 WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/accBest_reg[2]) is unused and will be removed from module TrackerTopLevel.
 WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/accBest_reg[1]) is unused and will be removed from module TrackerTopLevel.
 WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/accBest_reg[0]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[9]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[8]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[7]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[6]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[5]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[4]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[3]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[2]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[1]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealX_reg[0]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[8]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[7]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[6]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[5]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[4]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[3]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[2]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[1]) is unused and will be removed from module TrackerTopLevel.
+WARNING: [Synth 8-3332] Sequential element (camera_top/acc3/idealY_reg[0]) is unused and will be removed from module TrackerTopLevel.
 WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_R_reg[3]) is unused and will be removed from module TrackerTopLevel.
 WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_R_reg[2]) is unused and will be removed from module TrackerTopLevel.
 WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_R_reg[1]) is unused and will be removed from module TrackerTopLevel.
@@ -573,7 +704,7 @@ WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_G_reg[2]) is 
 WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_G_reg[1]) is unused and will be removed from module TrackerTopLevel.
 WARNING: [Synth 8-3332] Sequential element (camera_top/display/VGA_G_reg[0]) is unused and will be removed from module TrackerTopLevel.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -593,14 +724,13 @@ DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding R
 +----------------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |servo_driver          | (C:0x2bf20)+(A:0x7d0)*B            | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |servo_driver          | (C:0x2bf20)+(A:0x7d0)*B            | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|topModule             | (D'+(A:0x3fffffd8))*(B:0x258)      | 17     | 10     | -      | 9      | 27     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
+|topModule             | (D'+(A:0x3fffffd8))*(B:0x258)      | 18     | 10     | -      | 9      | 28     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
 |frameBuffer_greyScale | PCIN+(A:0x0):B+(C:0xffffffffffec)  | 30     | 10     | 6      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
-|frameBuffer_greyScale | (D+(A:0x3fffffd8))*(B:0x258)       | 17     | 10     | -      | 9      | 27     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|topModule             | PCIN+(A:0x0):B+(C:0xffffffffffec)  | 30     | 10     | 6      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |topModule             | (D'+(A:0x3fffffa1))*(B:0x1c2)      | 17     | 9      | -      | 9      | 26     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
 |houghAccumulator3     | PCIN+(A:0x0):B+(C:0xffffffffffa1)  | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
 |topModule             | (D'+(A:0x3fffffa1))*(B:0x1c2)      | 17     | 9      | -      | 9      | 26     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
 |topModule             | PCIN+(A:0x0):B2+(C:0xffffffffffa1) | 30     | 10     | 8      | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 1    | 
+|TrackerTopLevel       | C+A*(B:0x258)                      | 10     | 10     | 10     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 +----------------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -611,20 +741,20 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance camera_top/cam/camConfig/rom1/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -642,37 +772,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -696,14 +826,13 @@ DSP Final Report (the ' indicates corresponding REG is set)
 +----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name           | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|TrackerTopLevel       | C+A*B          | 10     | 10     | 10     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |topModule             | D'+A*B         | 30     | 9      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
 |houghAccumulator3     | (PCIN+A:B+C)'  | 0      | 10     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
 |topModule             | D'+A*B         | 30     | 9      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
 |topModule             | (PCIN+A:B'+C)' | 0      | 10     | -      | -      | 17     | 0    | 1    | -    | -    | -     | 0    | 1    | 
 |topModule             | D'+A*B         | 30     | 10     | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|frameBuffer_greyScale | (PCIN+A:B+C)'  | 0      | 10     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
-|frameBuffer_greyScale | D+A*B          | 30     | 10     | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|topModule             | PCIN+A:B+C     | 0      | 10     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|frameBuffer_greyScale | (PCIN+A:B+C)'  | 0      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 1    | 
 |servo_driver          | C+A*B          | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |servo_driver          | C+A*B          | 8      | 11     | 18     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 +----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
@@ -722,53 +851,49 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |bram3      |     1|
 |2     |BUFG       |     6|
-|3     |CARRY4     |   103|
-|4     |DSP48E1    |    10|
-|10    |LUT1       |   144|
-|11    |LUT2       |    94|
-|12    |LUT3       |   111|
-|13    |LUT4       |   126|
-|14    |LUT5       |   260|
-|15    |LUT6       |   291|
-|16    |MMCME2_ADV |     1|
-|17    |MUXF7      |    24|
-|18    |OSERDESE2  |     8|
-|20    |RAMB18E1   |     1|
-|21    |RAMB36E1   |    32|
-|22    |SRL16E     |    39|
-|23    |FDCE       |    64|
-|24    |FDRE       |   488|
-|25    |FDSE       |     7|
-|26    |LD         |    19|
-|27    |IBUF       |    29|
-|28    |OBUF       |     5|
-|29    |OBUFDS     |     4|
-|30    |OBUFT      |     2|
+|3     |CARRY4     |    84|
+|4     |DSP48E1    |     9|
+|8     |LUT1       |   141|
+|9     |LUT2       |    75|
+|10    |LUT3       |    92|
+|11    |LUT4       |    93|
+|12    |LUT5       |   171|
+|13    |LUT6       |   236|
+|14    |MMCME2_ADV |     1|
+|15    |MUXF7      |    10|
+|16    |OSERDESE2  |     8|
+|18    |RAMB18E1   |     1|
+|19    |RAMB36E1   |    32|
+|21    |SRL16E     |    39|
+|22    |FDCE       |    64|
+|23    |FDRE       |   429|
+|24    |FDSE       |     7|
+|25    |IBUF       |    29|
+|26    |OBUF       |     5|
+|27    |OBUFDS     |     4|
+|28    |OBUFT      |     2|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1548.051 ; gain = 768.199
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 174 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1572.805 ; gain = 793.281
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1572.805 ; gain = 793.281
+Synthesis finished with 0 errors, 0 critical warnings and 187 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1548.051 ; gain = 768.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1548.051 ; gain = 768.199
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1572.805 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 194 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1548.051 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1572.805 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1548.051 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 19 instances were transformed.
-  LD => LDCE: 19 instances
+No Unisim elements were transformed.
 
-Synth Design complete, checksum: b3d6ab09
+Synth Design complete, checksum: f5a27042
 INFO: [Common 17-83] Releasing license: Synthesis
-114 Infos, 156 Warnings, 0 Critical Warnings and 0 Errors encountered.
+120 Infos, 279 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1572.805 ; gain = 1170.605
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1548.051 ; gain = 1145.168
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.runs/synth_1/TrackerTopLevel.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TrackerTopLevel_utilization_synth.rpt -pb TrackerTopLevel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 01:33:32 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 17:30:02 2024...

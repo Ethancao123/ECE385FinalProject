@@ -21,7 +21,9 @@ module frameBuffer_greyScale(
         input [15:0] inPixel,
         input pixelValid,
 //        output reg [3:0] outPixel          
-        output wire [3:0] outPixel    
+        output wire [3:0] outPixel,   
+        input wire [17:0] outAddress,
+        output wire [3:0] outputPixel
     );
     
     parameter ROW_LENGTH = 600;
@@ -41,8 +43,8 @@ module frameBuffer_greyScale(
     
     // variables for reading from BRAM
 //    reg [17:0] outAddress;
-    wire [17:0] outAddress;
-    wire [3:0] outputPixel;
+//    wire [17:0] outAddress;
+//    wire [3:0] outputPixel;
     wire [3:0] outputPixelEdge_temp; // used for edge detector
     
     // edge detection
@@ -107,7 +109,7 @@ module frameBuffer_greyScale(
 //        outAddress <= (outX-COL_BIAS) + (outY-ROW_BIAS)*ROW_LENGTH;
 //        outPixel <= outputPixel;
 //    end
-assign outAddress = (outX-COL_BIAS) + (outY-ROW_BIAS)*ROW_LENGTH;
-assign outPixel = outputPixel;
+//assign outAddress = (outX-COL_BIAS) + (outY-ROW_BIAS)*ROW_LENGTH;
+//assign outPixel = outputPixel;
    
 endmodule
