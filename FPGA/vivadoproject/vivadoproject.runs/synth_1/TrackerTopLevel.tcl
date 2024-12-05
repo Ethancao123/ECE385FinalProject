@@ -73,6 +73,7 @@ OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 6
+set_param synth.incrementalSynthesisCache C:/Users/ethan/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1068-DESKTOP-JA1U62V/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -125,6 +126,26 @@ read_ip -quiet C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadopro
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
+
+add_files C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf]
 
 read_ip -quiet C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.srcs/sources_1/ip/bram3/bram3.xci
 set_property used_in_implementation false [get_files -all c:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/vivadoproject.gen/sources_1/ip/bram3/bram3_ooc.xdc]

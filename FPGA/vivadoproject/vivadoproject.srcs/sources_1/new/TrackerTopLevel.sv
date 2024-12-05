@@ -38,22 +38,37 @@ module TrackerTopLevel (
     logic vid_vsync;
     logic vid_hsync;
     logic vid_vde;
-    logic [9:0] vid_drawX, vid_drawY, tarX, tarY;
+    logic [9:0] vid_drawX, vid_drawY; 
+    logic [15:0] tarX, tarY;
     
     logic [16:0] cam_vramb_addr;
     logic [8:0] cam_vramb_data;
     
+    logic [31:0] servo_out;
+    logic [31:0] target_in;
+    
+    assign target_in = {tarX, tarY};
+    
+    design_1 blk_design(
+        .clk_100MHz(clk),
+        .reset_rtl_0(reset),
+        
+        .gpio_out(servo_out),
+        .gpio_in(target_in)
+    );
+    
+    
     servo_driver driver1(
         .clk_180MHz(clk_out180Mhz),
         .reset(reset),
-        .angle(sw_i[7:0]),
+        .angle(servo_out[7:0]),
         .PWM(Servo1PWM)
     );
     
     servo_driver driver2(
         .clk_180MHz(clk_out180Mhz),
         .reset(reset),
-        .angle(sw_i[15:8]),
+        .angle(servo_out[31:16]),
         .PWM(Servo2PWM)
     );
     
