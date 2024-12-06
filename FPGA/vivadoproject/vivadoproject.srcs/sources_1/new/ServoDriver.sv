@@ -1,7 +1,7 @@
 module servo_driver (
     input logic clk_180MHz,
     input logic reset,
-    input logic [7:0] angle,
+    input logic [7:0] angleIn,
     output logic PWM
 );
 
@@ -9,6 +9,8 @@ module servo_driver (
     logic [31:0] countcutoff;
     logic [31:0] offset;
     logic overflow;
+    
+    logic [7:0] angle;
     
     always_comb begin
         offset = 0; //180
@@ -18,6 +20,7 @@ module servo_driver (
     
     always_ff @ (posedge clk_180MHz)
     begin
+        angle <= angleIn;
         if(reset || overflow) begin
             count <= 0;
             PWM <= 0;

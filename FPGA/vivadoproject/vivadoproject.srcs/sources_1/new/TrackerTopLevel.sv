@@ -16,7 +16,10 @@ module TrackerTopLevel (
     output logic pwdn,
     
     output logic hdmi_tmds_clk_n, hdmi_tmds_clk_p,
-    output logic [2:0] hdmi_tmds_data_n, hdmi_tmds_data_p
+    output logic [2:0] hdmi_tmds_data_n, hdmi_tmds_data_p,
+    
+    input logic uart_rtl_0_rxd,
+    output logic uart_rtl_0_txd
 );
 
     logic reset;
@@ -51,24 +54,28 @@ module TrackerTopLevel (
     
     design_1 blk_design(
         .clk_100MHz(clk),
-        .reset_rtl_0(reset),
+        .clk_lk(clk_locked),
+        .reset_rtl_0(~reset),
         
-        .gpio_out(servo_out),
-        .gpio_in(target_in)
+        .gpio_rtl_1_tri_o(servo_out),
+        .gpio_rtl_0_tri_i(target_in),
+        
+        .uart_rtl_0_rxd(uart_rtl_0_rxd),
+        .uart_rtl_0_txd(uart_rtl_0_txd)
     );
     
     
     servo_driver driver1(
         .clk_180MHz(clk_out180Mhz),
         .reset(reset),
-        .angle(servo_out[7:0]),
+        .angleIn(servo_out[7:0]),
         .PWM(Servo1PWM)
     );
     
     servo_driver driver2(
         .clk_180MHz(clk_out180Mhz),
         .reset(reset),
-        .angle(servo_out[31:16]),
+        .angleIn(servo_out[23:16]),
         .PWM(Servo2PWM)
     );
     
@@ -129,7 +136,7 @@ module TrackerTopLevel (
         .drawY(vid_drawY)
     );
     always_comb begin
-        if(vid_drawX == (tarX * 40) || vid_drawY == (tarY * 40)) begin
+        if(vid_drawX == tarX || vid_drawY == tarY) begin
             red = 0;
             green = 0;
             blue = 8;

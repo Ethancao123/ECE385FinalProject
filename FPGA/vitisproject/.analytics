@@ -1,0 +1,205 @@
+timestamp=[2024-12-05 03:16:52], mode=WORKBENCH_START, duration=0:00:03.892, duration_ms=3892, data={}
+timestamp=[2024-12-05 03:16:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.407, duration_ms=407, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-12-05 03:16:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.046, duration_ms=46, data={}
+timestamp=[2024-12-05 03:27:58], mode=APP_CREATION, duration=0:00:02.888, duration_ms=2888, data={name=tracker, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=TrackerTopLevel, application_type=application}
+timestamp=[2024-12-05 03:28:06], mode=PLATFORM_GENERATION, duration=0:00:03.613, duration_ms=3613, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 03:28:07], mode=BUILD, duration=0:00:01.070, duration_ms=1070, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 03:28:08], mode=BUILD, duration=0:00:00.123, duration_ms=123, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 03:34:23], mode=PLATFORM_GENERATION, duration=0:00:04.402, duration_ms=4402, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 03:34:24], mode=BUILD, duration=0:00:00.810, duration_ms=810, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 03:34:24], mode=BUILD, duration=0:00:00.120, duration_ms=120, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 03:35:57], mode=BUILD, duration=0:00:00.567, duration_ms=567, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 03:35:57], mode=BUILD, duration=0:00:00.131, duration_ms=131, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 03:36:46], mode=WORKBENCH_START, duration=0:00:04.053, duration_ms=4053, data={}
+timestamp=[2024-12-05 03:36:47], mode=WORKBENCH_UI_INIT, duration=0:00:00.511, duration_ms=511, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TrackerTopLevel,tracker,tracker_system}
+timestamp=[2024-12-05 03:36:47], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.021, duration_ms=21, data={}
+timestamp=[2024-12-05 03:36:56], mode=BUILD, duration=0:00:00.142, duration_ms=142, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 03:47:50], mode=PLATFORM_GENERATION, duration=0:00:04.123, duration_ms=4123, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 18:10:50], mode=WORKBENCH_START, duration=0:00:06.124, duration_ms=6124, data={}
+timestamp=[2024-12-05 18:10:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.062, duration_ms=62, data={}
+timestamp=[2024-12-05 18:10:51], mode=WORKBENCH_UI_INIT, duration=0:00:00.778, duration_ms=778, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TrackerTopLevel,tracker,tracker_system}
+timestamp=[2024-12-05 18:23:09], mode=PLATFORM_GENERATION, duration=0:00:05.230, duration_ms=5230, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 18:23:10], mode=BUILD, duration=0:00:01.029, duration_ms=1029, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:23:11], mode=BUILD, duration=0:00:00.153, duration_ms=153, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:35:14], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=tracker, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 18:35:14], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:36:35], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:39:28], mode=BUILD, duration=0:00:00.246, duration_ms=246, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:39:47], mode=BUILD, duration=0:00:00.244, duration_ms=244, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:39:53], mode=BUILD, duration=0:00:00.560, duration_ms=560, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:40:43], mode=BUILD, duration=0:00:00.448, duration_ms=448, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:40:48], mode=BUILD, duration=0:00:00.255, duration_ms=255, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:41:23], mode=BUILD, duration=0:00:00.432, duration_ms=432, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:42:08], mode=BUILD, duration=0:00:00.435, duration_ms=435, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:42:31], mode=PLATFORM_GENERATION, duration=0:00:01.931, duration_ms=1931, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 18:42:31], mode=BUILD, duration=0:00:00.173, duration_ms=173, data={name=tracker, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 18:42:31], mode=BUILD, duration=0:00:00.125, duration_ms=125, data={name=tracker_system, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 18:42:37], mode=PLATFORM_GENERATION, duration=0:00:03.010, duration_ms=3010, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 18:42:37], mode=BUILD, duration=0:00:00.631, duration_ms=631, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:43:04], mode=BUILD, duration=0:00:00.446, duration_ms=446, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:44:42], mode=BUILD, duration=0:00:00.425, duration_ms=425, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:45:38], mode=BUILD, duration=0:00:00.442, duration_ms=442, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:45:46], mode=PLATFORM_GENERATION, duration=0:00:01.920, duration_ms=1920, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 18:45:47], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=tracker, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 18:45:47], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=tracker_system, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 18:45:52], mode=PLATFORM_GENERATION, duration=0:00:02.990, duration_ms=2990, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 18:45:52], mode=BUILD, duration=0:00:00.624, duration_ms=624, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:46:30], mode=BUILD, duration=0:00:00.444, duration_ms=444, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:49:11], mode=BUILD, duration=0:00:00.437, duration_ms=437, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:50:07], mode=BUILD, duration=0:00:00.440, duration_ms=440, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:50:46], mode=BUILD, duration=0:00:00.439, duration_ms=439, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:50:57], mode=BUILD, duration=0:00:00.450, duration_ms=450, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:51:02], mode=BUILD, duration=0:00:00.440, duration_ms=440, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:52:58], mode=BUILD, duration=0:00:00.465, duration_ms=465, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:54:06], mode=BUILD, duration=0:00:00.253, duration_ms=253, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:54:15], mode=BUILD, duration=0:00:00.447, duration_ms=447, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:54:25], mode=BUILD, duration=0:00:00.442, duration_ms=442, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:56:26], mode=BUILD, duration=0:00:00.431, duration_ms=431, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:57:09], mode=BUILD, duration=0:00:00.434, duration_ms=434, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:58:03], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:58:13], mode=BUILD, duration=0:00:00.254, duration_ms=254, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 18:58:32], mode=BUILD, duration=0:00:00.442, duration_ms=442, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:03:59], mode=PLATFORM_GENERATION, duration=0:00:04.222, duration_ms=4222, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 19:03:59], mode=BUILD, duration=0:00:00.621, duration_ms=621, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:04:21], mode=PLATFORM_GENERATION, duration=0:00:01.945, duration_ms=1945, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 19:04:21], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=tracker, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 19:04:21], mode=BUILD, duration=0:00:00.124, duration_ms=124, data={name=tracker_system, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 19:04:25], mode=PLATFORM_GENERATION, duration=0:00:02.935, duration_ms=2935, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 19:04:25], mode=BUILD, duration=0:00:00.623, duration_ms=623, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:14:47], mode=PLATFORM_GENERATION, duration=0:00:01.920, duration_ms=1920, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 19:14:47], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=tracker, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 19:14:47], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=tracker_system, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 19:14:56], mode=PLATFORM_GENERATION, duration=0:00:04.031, duration_ms=4031, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 19:14:57], mode=BUILD, duration=0:00:00.633, duration_ms=633, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:16:33], mode=BUILD, duration=0:00:00.435, duration_ms=435, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:18:41], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:19:04], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:19:13], mode=BUILD, duration=0:00:00.430, duration_ms=430, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:19:14], mode=BUILD, duration=0:00:00.127, duration_ms=127, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:19:22], mode=BUILD, duration=0:00:00.252, duration_ms=252, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:19:27], mode=BUILD, duration=0:00:00.441, duration_ms=441, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:19:28], mode=BUILD, duration=0:00:00.129, duration_ms=129, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:19:39], mode=BUILD, duration=0:00:00.639, duration_ms=639, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:19:39], mode=BUILD, duration=0:00:00.127, duration_ms=127, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:20:04], mode=BUILD, duration=0:00:00.563, duration_ms=563, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:20:05], mode=BUILD, duration=0:00:00.112, duration_ms=112, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:20:23], mode=BUILD, duration=0:00:00.651, duration_ms=651, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:20:24], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:21:39], mode=WORKBENCH_START, duration=0:00:04.115, duration_ms=4115, data={}
+timestamp=[2024-12-05 19:21:40], mode=WORKBENCH_UI_INIT, duration=0:00:00.428, duration_ms=428, data={editors_count=10, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TrackerTopLevel,tracker,tracker_system}
+timestamp=[2024-12-05 19:21:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.052, duration_ms=52, data={}
+timestamp=[2024-12-05 19:24:09], mode=BUILD, duration=0:00:00.158, duration_ms=158, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:24:10], mode=BUILD, duration=0:00:00.143, duration_ms=143, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:27:29], mode=BUILD, duration=0:00:00.434, duration_ms=434, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:28:51], mode=BUILD, duration=0:00:00.441, duration_ms=441, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:30:37], mode=BUILD, duration=0:00:00.638, duration_ms=638, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:30:37], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:31:11], mode=BUILD, duration=0:00:00.243, duration_ms=243, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:31:21], mode=BUILD, duration=0:00:00.557, duration_ms=557, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:31:21], mode=BUILD, duration=0:00:00.130, duration_ms=130, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:36:32], mode=BUILD, duration=0:00:00.714, duration_ms=714, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:36:33], mode=BUILD, duration=0:00:00.199, duration_ms=199, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:36:55], mode=BUILD, duration=0:00:00.127, duration_ms=127, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:36:56], mode=BUILD, duration=0:00:00.192, duration_ms=192, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:44:22], mode=PLATFORM_GENERATION, duration=0:00:05.056, duration_ms=5056, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 19:44:36], mode=BUILD, duration=0:00:00.885, duration_ms=885, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:44:56], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:45:10], mode=PLATFORM_GENERATION, duration=0:00:04.538, duration_ms=4538, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 19:45:11], mode=BUILD, duration=0:00:00.882, duration_ms=882, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:45:21], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 19:45:38], mode=BUILD, duration=0:00:00.132, duration_ms=132, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:07:17], mode=WORKBENCH_START, duration=0:00:03.710, duration_ms=3710, data={}
+timestamp=[2024-12-05 20:07:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.453, duration_ms=453, data={editors_count=11, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TrackerTopLevel,tracker,tracker_system}
+timestamp=[2024-12-05 20:07:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.021, duration_ms=21, data={}
+timestamp=[2024-12-05 20:07:39], mode=PLATFORM_GENERATION, duration=0:00:04.251, duration_ms=4251, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 20:07:40], mode=BUILD, duration=0:00:00.810, duration_ms=810, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:08:09], mode=BUILD, duration=0:00:00.647, duration_ms=647, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:08:10], mode=BUILD, duration=0:00:00.139, duration_ms=139, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:09:34], mode=BUILD, duration=0:00:00.700, duration_ms=700, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:09:34], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:10:47], mode=WORKBENCH_START, duration=0:00:04.113, duration_ms=4113, data={}
+timestamp=[2024-12-05 20:10:47], mode=WORKBENCH_UI_INIT, duration=0:00:00.470, duration_ms=470, data={editors_count=11, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TrackerTopLevel,tracker,tracker_system}
+timestamp=[2024-12-05 20:10:47], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.045, duration_ms=45, data={}
+timestamp=[2024-12-05 20:11:37], mode=BUILD, duration=0:00:00.656, duration_ms=656, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:11:38], mode=BUILD, duration=0:00:00.132, duration_ms=132, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:33:15], mode=BUILD, duration=0:00:00.621, duration_ms=621, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:33:15], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:33:42], mode=BUILD, duration=0:00:00.564, duration_ms=564, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:33:43], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:34:01], mode=BUILD, duration=0:00:00.576, duration_ms=576, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:34:02], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:34:25], mode=BUILD, duration=0:00:00.567, duration_ms=567, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:34:25], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:35:26], mode=BUILD, duration=0:00:00.570, duration_ms=570, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:35:26], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:40:59], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:41:00], mode=BUILD, duration=0:00:00.130, duration_ms=130, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 20:42:13], mode=WORKBENCH_START, duration=0:00:04.239, duration_ms=4239, data={}
+timestamp=[2024-12-05 20:42:14], mode=WORKBENCH_UI_INIT, duration=0:00:00.423, duration_ms=423, data={editors_count=11, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TrackerTopLevel,tracker,tracker_system}
+timestamp=[2024-12-05 20:42:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.037, duration_ms=37, data={}
+timestamp=[2024-12-05 21:01:29], mode=BUILD, duration=0:00:00.656, duration_ms=656, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:01:29], mode=BUILD, duration=0:00:00.136, duration_ms=136, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:03:17], mode=BUILD, duration=0:00:00.584, duration_ms=584, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:03:18], mode=BUILD, duration=0:00:00.127, duration_ms=127, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:04:50], mode=BUILD, duration=0:00:00.633, duration_ms=633, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:04:50], mode=BUILD, duration=0:00:00.131, duration_ms=131, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:05:20], mode=BUILD, duration=0:00:00.259, duration_ms=259, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:05:31], mode=BUILD, duration=0:00:00.622, duration_ms=622, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:05:31], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:05:57], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:05:57], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:06:29], mode=WORKBENCH_START, duration=0:00:04.217, duration_ms=4217, data={}
+timestamp=[2024-12-05 21:06:30], mode=WORKBENCH_UI_INIT, duration=0:00:00.530, duration_ms=530, data={editors_count=12, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TrackerTopLevel,tracker,tracker_system}
+timestamp=[2024-12-05 21:06:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.035, duration_ms=35, data={}
+timestamp=[2024-12-05 21:06:38], mode=BUILD, duration=0:00:00.154, duration_ms=154, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:06:38], mode=BUILD, duration=0:00:00.146, duration_ms=146, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:12:25], mode=PLATFORM_GENERATION, duration=0:00:04.446, duration_ms=4446, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 21:12:26], mode=BUILD, duration=0:00:00.840, duration_ms=840, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:12:26], mode=BUILD, duration=0:00:00.129, duration_ms=129, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:12:30], mode=BUILD, duration=0:00:00.640, duration_ms=640, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:12:30], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:27:26], mode=BUILD, duration=0:00:00.259, duration_ms=259, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:27:35], mode=BUILD, duration=0:00:00.253, duration_ms=253, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:27:49], mode=BUILD, duration=0:00:00.263, duration_ms=263, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:28:07], mode=BUILD, duration=0:00:00.445, duration_ms=445, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:28:48], mode=PLATFORM_GENERATION, duration=0:00:04.350, duration_ms=4350, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 21:28:48], mode=BUILD, duration=0:00:00.633, duration_ms=633, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:29:40], mode=BUILD, duration=0:00:00.251, duration_ms=251, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:29:51], mode=BUILD, duration=0:00:00.464, duration_ms=464, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:29:52], mode=BUILD, duration=0:00:00.120, duration_ms=120, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:32:23], mode=BUILD, duration=0:00:00.638, duration_ms=638, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:32:23], mode=BUILD, duration=0:00:00.134, duration_ms=134, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:32:58], mode=BUILD, duration=0:00:00.628, duration_ms=628, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:32:59], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:36:39], mode=BUILD, duration=0:00:00.633, duration_ms=633, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:36:39], mode=BUILD, duration=0:00:00.131, duration_ms=131, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:37:57], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:38:20], mode=BUILD, duration=0:00:00.642, duration_ms=642, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:38:21], mode=BUILD, duration=0:00:00.127, duration_ms=127, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:38:39], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:38:39], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:38:54], mode=BUILD, duration=0:00:00.621, duration_ms=621, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:38:54], mode=BUILD, duration=0:00:00.132, duration_ms=132, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:39:19], mode=BUILD, duration=0:00:00.637, duration_ms=637, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:39:20], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:40:23], mode=BUILD, duration=0:00:00.634, duration_ms=634, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:40:23], mode=BUILD, duration=0:00:00.130, duration_ms=130, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:40:55], mode=BUILD, duration=0:00:00.639, duration_ms=639, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:40:56], mode=BUILD, duration=0:00:00.132, duration_ms=132, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:41:21], mode=BUILD, duration=0:00:00.632, duration_ms=632, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:41:21], mode=BUILD, duration=0:00:00.131, duration_ms=131, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:44:26], mode=BUILD, duration=0:00:00.635, duration_ms=635, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:44:26], mode=BUILD, duration=0:00:00.133, duration_ms=133, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:46:08], mode=BUILD, duration=0:00:00.645, duration_ms=645, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 21:50:28], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 22:01:45], mode=PLATFORM_GENERATION, duration=0:00:04.521, duration_ms=4521, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 22:12:01], mode=PLATFORM_GENERATION, duration=0:00:02.020, duration_ms=2020, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 22:12:02], mode=BUILD, duration=0:00:00.185, duration_ms=185, data={name=tracker, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 22:12:02], mode=BUILD, duration=0:00:00.140, duration_ms=140, data={name=tracker_system, configuration=Debug, clean_build=true}
+timestamp=[2024-12-05 22:12:07], mode=PLATFORM_GENERATION, duration=0:00:04.448, duration_ms=4448, data={name=TrackerTopLevel}
+timestamp=[2024-12-05 22:12:08], mode=BUILD, duration=0:00:00.882, duration_ms=882, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 22:12:09], mode=BUILD, duration=0:00:00.141, duration_ms=141, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 22:14:01], mode=BUILD, duration=0:00:00.698, duration_ms=698, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 22:14:01], mode=BUILD, duration=0:00:00.133, duration_ms=133, data={name=tracker_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 22:14:27], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=tracker, configuration=Debug, clean_build=false}
+timestamp=[2024-12-05 22:14:27], mode=BUILD, duration=0:00:00.133, duration_ms=133, data={name=tracker_system, configuration=Debug, clean_build=false}

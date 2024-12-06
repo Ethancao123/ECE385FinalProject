@@ -35,8 +35,8 @@ module target(
     assign blocknum = drawX / 40 + (drawY / 40) * 15;
     logic [8:0] maxInd, rollingInd;
     logic [8:0] maxVal;
-    assign targetX = (maxInd % 15);
-    assign targetY = (maxInd / 15);
+    assign targetX = (maxInd % 15) * 40;
+    assign targetY = (maxInd / 15) * 40;
     always_ff @(posedge clk) begin
         if(~vsync) begin
             maxVal <= 0;
