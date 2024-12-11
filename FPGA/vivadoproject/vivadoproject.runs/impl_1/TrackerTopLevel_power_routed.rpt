@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Thu Dec  5 22:11:22 2024
+| Date             : Wed Dec 11 00:22:07 2024
 | Host             : DESKTOP-JA1U62V running 64-bit major release  (build 9200)
 | Command          : report_power -file TrackerTopLevel_power_routed.rpt -pb TrackerTopLevel_power_summary_routed.pb -rpx TrackerTopLevel_power_routed.rpx
 | Design           : TrackerTopLevel
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.395        |
+| Total On-Chip Power (W)  | 0.396        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.319        |
+| Dynamic (W)              | 0.320        |
 | Device Static (W)        | 0.076        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 83.0         |
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.020 |       11 |       --- |             --- |
-| Slice Logic              |     0.008 |    13475 |       --- |             --- |
-|   LUT as Logic           |     0.007 |     4319 |     32600 |           13.25 |
+| Slice Logic              |     0.008 |    13476 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     4317 |     32600 |           13.24 |
 |   LUT as Distributed RAM |    <0.001 |      184 |      9600 |            1.92 |
 |   CARRY4                 |    <0.001 |      220 |      8150 |            2.70 |
 |   Register               |    <0.001 |     6129 |     65200 |            9.40 |
@@ -62,13 +62,13 @@ Table of Contents
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   LUT as Shift Register  |    <0.001 |      209 |      9600 |            2.18 |
 |   Others                 |     0.000 |     1076 |       --- |             --- |
-| Signals                  |     0.019 |    10044 |       --- |             --- |
+| Signals                  |     0.019 |    10043 |       --- |             --- |
 | Block RAM                |     0.018 |       71 |        75 |           94.67 |
 | MMCM                     |     0.115 |        1 |         5 |           20.00 |
 | DSPs                     |     0.005 |       10 |       120 |            8.33 |
 | I/O                      |     0.135 |       33 |       210 |           15.71 |
 | Static Power             |     0.076 |          |           |                 |
-| Total                    |     0.395 |          |           |                 |
+| Total                    |     0.396 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -153,24 +153,23 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| TrackerTopLevel           |     0.319 |
-|   blk_design              |     0.033 |
+| TrackerTopLevel           |     0.320 |
+|   blk_design              |     0.034 |
 |     axi_gpio_1            |     0.001 |
 |       U0                  |     0.001 |
-|     microblaze_0          |     0.026 |
-|       U0                  |     0.026 |
+|     microblaze_0          |     0.027 |
+|       U0                  |     0.027 |
 |     microblaze_0_axi_intc |     0.001 |
 |       U0                  |     0.001 |
-|   camera_top              |     0.023 |
+|   camera_top              |     0.022 |
 |     cam                   |     0.002 |
-|       camCapture          |     0.001 |
 |     frame                 |     0.021 |
 |       greyScale           |     0.018 |
 |   clk_wiz_1               |     0.115 |
 |     inst                  |     0.115 |
-|   dbg_hub                 |     0.002 |
-|     inst                  |     0.002 |
-|       BSCANID.u_xsdbm_id  |     0.002 |
+|   dbg_hub                 |     0.001 |
+|     inst                  |     0.001 |
+|       BSCANID.u_xsdbm_id  |     0.001 |
 |   driver1                 |     0.001 |
 |   driver2                 |     0.001 |
 |   target                  |     0.005 |

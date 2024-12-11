@@ -2950,3 +2950,272 @@ con
 ----------------End of Script----------------
 
 22:21:48 INFO  : Disconnected from the channel tcfchan#34.
+00:23:05 DEBUG : Logs will be stored at 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/IDE.log'.
+00:23:05 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\ethan\Documents\GitHub\ECE385FinalProject\FPGA\vitisproject\temp_xsdb_launch_script.tcl
+00:23:07 INFO  : Platform repository initialization has completed.
+00:23:08 INFO  : Registering command handlers for Vitis TCF services
+00:23:08 INFO  : XSCT server has started successfully.
+00:23:10 INFO  : Successfully done setting XSCT server connection channel  
+00:23:10 INFO  : plnx-install-location is set to ''
+00:23:10 INFO  : Successfully done query RDI_DATADIR 
+00:23:10 INFO  : Successfully done setting workspace for the tool. 
+00:23:28 INFO  : Checking for BSP changes to sync application flags for project 'tracker'...
+00:23:33 INFO  : Hardware specification for platform project 'TrackerTopLevel' is updated.
+00:23:40 INFO  : Result from executing command 'getProjects': TrackerTopLevel
+00:23:40 INFO  : Result from executing command 'getPlatforms': TrackerTopLevel|C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/TrackerTopLevel.xpfm
+00:23:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:23:54 INFO  : Jtag cable 'RealDigital Boo 887100000005A' is selected.
+00:23:54 INFO  : 'jtag frequency' command is executed.
+00:23:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:23:57 INFO  : Device configured successfully with "C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit"
+00:23:57 INFO  : Context for processor 'microblaze_0' is selected.
+00:23:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa'.
+00:23:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:23:57 INFO  : Context for processor 'microblaze_0' is selected.
+00:23:57 INFO  : System reset is completed.
+00:24:00 INFO  : 'after 3000' command is executed.
+00:24:01 INFO  : Context for processor 'microblaze_0' is selected.
+00:24:01 INFO  : The application 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf' is downloaded to processor 'microblaze_0'.
+00:24:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf
+----------------End of Script----------------
+
+00:24:01 INFO  : Context for processor 'microblaze_0' is selected.
+00:24:01 INFO  : 'con' command is executed.
+00:24:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:24:01 INFO  : Disconnected from the channel tcfchan#2.
+00:26:43 INFO  : Checking for BSP changes to sync application flags for project 'tracker'...
+00:26:44 INFO  : The hardware specification used by project 'tracker' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+00:26:44 INFO  : The file 'C:\Users\ethan\Documents\GitHub\ECE385FinalProject\FPGA\vitisproject\tracker\_ide\bitstream\TrackerTopLevel.bit' stored in project is removed.
+00:26:44 INFO  : The file 'C:\Users\ethan\Documents\GitHub\ECE385FinalProject\FPGA\vitisproject\tracker\_ide\bitstream\TrackerTopLevel.mmi' stored in project is removed.
+00:26:44 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\ethan\Documents\GitHub\ECE385FinalProject\FPGA\vitisproject\tracker\_ide\bitstream' in project 'tracker'.
+00:26:48 INFO  : Checking for BSP changes to sync application flags for project 'tracker'...
+00:26:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:26:53 INFO  : Jtag cable 'RealDigital Boo 887100000005A' is selected.
+00:26:53 INFO  : 'jtag frequency' command is executed.
+00:26:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:26:56 INFO  : Device configured successfully with "C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit"
+00:26:56 INFO  : Context for processor 'microblaze_0' is selected.
+00:26:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa'.
+00:26:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:26:56 INFO  : Context for processor 'microblaze_0' is selected.
+00:26:56 INFO  : System reset is completed.
+00:26:59 INFO  : 'after 3000' command is executed.
+00:26:59 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:00 INFO  : The application 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf' is downloaded to processor 'microblaze_0'.
+00:27:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf
+----------------End of Script----------------
+
+00:27:00 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:00 INFO  : 'con' command is executed.
+00:27:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:27:00 INFO  : Disconnected from the channel tcfchan#3.
+00:29:12 INFO  : Checking for BSP changes to sync application flags for project 'tracker'...
+00:29:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:29:18 INFO  : Jtag cable 'RealDigital Boo 887100000005A' is selected.
+00:29:18 INFO  : 'jtag frequency' command is executed.
+00:29:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:29:20 INFO  : Device configured successfully with "C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit"
+00:29:20 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa'.
+00:29:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:29:20 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:20 INFO  : System reset is completed.
+00:29:23 INFO  : 'after 3000' command is executed.
+00:29:24 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:24 INFO  : The application 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf' is downloaded to processor 'microblaze_0'.
+00:29:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf
+----------------End of Script----------------
+
+00:29:24 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:24 INFO  : 'con' command is executed.
+00:29:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:29:24 INFO  : Disconnected from the channel tcfchan#4.
+00:29:35 INFO  : Checking for BSP changes to sync application flags for project 'tracker'...
+00:29:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:29:41 INFO  : Jtag cable 'RealDigital Boo 887100000005A' is selected.
+00:29:41 INFO  : 'jtag frequency' command is executed.
+00:29:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:29:43 INFO  : Device configured successfully with "C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit"
+00:29:43 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa'.
+00:29:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:29:43 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:43 INFO  : System reset is completed.
+00:29:46 INFO  : 'after 3000' command is executed.
+00:29:47 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:47 INFO  : The application 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf' is downloaded to processor 'microblaze_0'.
+00:29:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf
+----------------End of Script----------------
+
+00:29:47 INFO  : Context for processor 'microblaze_0' is selected.
+00:29:47 INFO  : 'con' command is executed.
+00:29:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:29:47 INFO  : Disconnected from the channel tcfchan#5.
+00:30:27 INFO  : Checking for BSP changes to sync application flags for project 'tracker'...
+00:30:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:30:33 INFO  : Jtag cable 'RealDigital Boo 887100000005A' is selected.
+00:30:33 INFO  : 'jtag frequency' command is executed.
+00:30:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:30:35 INFO  : Device configured successfully with "C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit"
+00:30:35 INFO  : Context for processor 'microblaze_0' is selected.
+00:30:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa'.
+00:30:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:30:35 INFO  : Context for processor 'microblaze_0' is selected.
+00:30:35 INFO  : System reset is completed.
+00:30:38 INFO  : 'after 3000' command is executed.
+00:30:39 INFO  : Context for processor 'microblaze_0' is selected.
+00:30:39 INFO  : The application 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf' is downloaded to processor 'microblaze_0'.
+00:30:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf
+----------------End of Script----------------
+
+00:30:39 INFO  : Context for processor 'microblaze_0' is selected.
+00:30:39 INFO  : 'con' command is executed.
+00:30:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:30:39 INFO  : Disconnected from the channel tcfchan#6.
+00:30:55 INFO  : Checking for BSP changes to sync application flags for project 'tracker'...
+00:31:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:31:02 INFO  : Jtag cable 'RealDigital Boo 887100000005A' is selected.
+00:31:02 INFO  : 'jtag frequency' command is executed.
+00:31:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:31:04 INFO  : Device configured successfully with "C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit"
+00:31:04 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa'.
+00:31:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:31:04 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:04 INFO  : System reset is completed.
+00:31:07 INFO  : 'after 3000' command is executed.
+00:31:08 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:08 INFO  : The application 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf' is downloaded to processor 'microblaze_0'.
+00:31:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf
+----------------End of Script----------------
+
+00:31:08 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:08 INFO  : 'con' command is executed.
+00:31:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:31:08 INFO  : Disconnected from the channel tcfchan#7.
+00:31:29 INFO  : Checking for BSP changes to sync application flags for project 'tracker'...
+00:31:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:31:37 INFO  : Jtag cable 'RealDigital Boo 887100000005A' is selected.
+00:31:37 INFO  : 'jtag frequency' command is executed.
+00:31:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+00:31:39 INFO  : Device configured successfully with "C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit"
+00:31:39 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa'.
+00:31:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:31:39 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:39 INFO  : System reset is completed.
+00:31:42 INFO  : 'after 3000' command is executed.
+00:31:43 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:43 INFO  : The application 'C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf' is downloaded to processor 'microblaze_0'.
+00:31:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000005A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/_ide/bitstream/TrackerTopLevel.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/TrackerTopLevel/export/TrackerTopLevel/hw/TrackerTopLevel.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vitisproject/tracker/Debug/tracker.elf
+----------------End of Script----------------
+
+00:31:43 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:43 INFO  : 'con' command is executed.
+00:31:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:31:43 INFO  : Disconnected from the channel tcfchan#8.

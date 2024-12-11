@@ -1,4 +1,4 @@
-22:14:26 **** Incremental Build of configuration Debug for project tracker ****
+00:31:29 **** Incremental Build of configuration Debug for project tracker ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -17,5 +17,5 @@ mb-size tracker.elf  |tee "tracker.elf.size"
 'Finished building: tracker.elf.size'
 ' '
 
-22:14:27 Build Finished (took 625ms)
+00:31:29 Build Finished (took 561ms)
 

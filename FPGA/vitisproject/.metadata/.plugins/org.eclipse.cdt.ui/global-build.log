@@ -1,6 +1,6 @@
 Nothing to build in platform 'TrackerTopLevel'
 
-22:14:26 **** Incremental Build of configuration Debug for project tracker ****
+00:31:29 **** Incremental Build of configuration Debug for project tracker ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -18,6 +18,6 @@ mb-size tracker.elf  |tee "tracker.elf.size"
    6212	    336	   1100	   7648	   1de0	tracker.elf
 'Finished building: tracker.elf.size'
 ' '
-22:14:27 **** Incremental Build of configuration Debug for project tracker_system ****
+00:31:29 **** Incremental Build of configuration Debug for project tracker_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

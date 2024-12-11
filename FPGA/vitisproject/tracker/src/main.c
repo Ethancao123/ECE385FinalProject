@@ -66,9 +66,11 @@ float dErrorY;
 float stepX;
 float stepY;
 
-const float kp = 0.00001;
+const float kp = 0.000005;
 const float ki = 0;
-const float kd = 0.00001;
+const float kd = 0.00005;
+
+
 
 #define UART_BAUD 115200
 int main()

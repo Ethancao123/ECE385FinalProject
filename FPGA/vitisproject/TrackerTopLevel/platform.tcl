@@ -55,3 +55,6 @@ platform generate -domains
 platform config -updatehw {C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/TrackerTopLevel.xsa}
 platform clean
 platform generate
+platform active {TrackerTopLevel}
+platform config -updatehw {C:/Users/ethan/Documents/GitHub/ECE385FinalProject/FPGA/vivadoproject/TrackerTopLevel.xsa}
+platform generate -domains 

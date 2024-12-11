@@ -30,7 +30,7 @@ module frameBuffer_greyScale(
     parameter ROW_LENGTH = 600;
     parameter COL_LENGTH = 400; 
     parameter THRESHOLD_MIN = 9;
-    parameter THRESHOLD_MAX = 5;
+    parameter THRESHOLD_MAX = 4;
     parameter THRESHOLD_MIN2 = 10;
     parameter THRESHOLD_MAX2 = 7;
     parameter COL_BIAS = 20;
@@ -96,8 +96,8 @@ module frameBuffer_greyScale(
             end
             else
             begin
-                if ((inPixel[15:12] >= THRESHOLD_MIN) && (inPixel[10:7] < THRESHOLD_MAX) && (inPixel[4:1] < THRESHOLD_MAX))
-                    inputPixel <= inPixel[15:12];
+                if ((inPixel[15:12] >= THRESHOLD_MIN) && (inPixel[10:7] <= THRESHOLD_MAX) && (inPixel[4:1] <= THRESHOLD_MAX))
+                    inputPixel <= 8;
                 else
                     inputPixel <= 0;            
             end
